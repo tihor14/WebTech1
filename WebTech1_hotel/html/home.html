@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../javascript/javaScript.js" defer></script>
+    <style>
+        input:invalid {
+            outline: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo"><i class="fa fa-bed"></i> Logo</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="ourHotels.html">Our Hotels</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="booknow">Book Now</a>
+    </nav>
+    <article>
+        <img src="../kepek/hotel.jpg" alt="The Hotel" width="1500" height="800">
+        <form target="_blank" onsubmit="return validateForm()">
+            <h1><i class="fa fa-bed"></i> Hotel Name</h1><br>
+            <div>
+                <div>
+                    <label><i class="fa fa-calendar-o"></i> Check In</label><br>
+                    <input type="date" placeholder="YYYY-MM-DD" class="bevitel1" required id="checkInDate"><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-calendar-o"></i>  Check Out</label><br>
+                    <input type="date" placeholder="YYYY-MM-DD" class="bevitel1" required id="checkOutDate" ><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-male"></i>  Adults</label><br>
+                    <input type="number" value="1" min="1" max="6" class="bevitel1" id="adults"><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-child"></i> Kids</label><br>
+                    <input type="number" value="0" min="0" max="6" class="bevitel1"><br>
+                </div>
+                <div style="width: 75% !important; margin-left: 10px;">
+                    <p>Meal Plan:</p>
+                    <label><input type="radio" name="mealPlan" value="breakfast"> Breakfast</label>
+                    <label><input type="radio" name="mealPlan" value="halfBoard"> Half Board</label>
+                    <label><input type="radio" name="mealPlan" value="fullBoard"> Full Board</label>
+                </div>
+                <div style="width: 20% !important; margin-right: 10px;">
+                    <label><i class="fa fa-paint-brush"></i> Room Color:</label><br>
+                    <input type="color" name="roomColor" id="roomColor" value="#ffffff"><br>
+                </div>
+                <div style="width: 100% !important; margin-left: 10px;">
+                    <p>Room Facilities:</p>
+                    <label><input type="checkbox" name="facilities" value="minibar"> Minibar</label>
+                    <label><input type="checkbox" name="facilities" value="airConditioning"> Air Conditioning</label>
+                    <label><input type="checkbox" name="facilities" value="jacuzzi"> Jacuzzi</label>
+                    <label><input type="checkbox" name="facilities" value="tv"> TV</label>
+                </div>
+                
+            </div>
+            <button type="submit" class="kereso_gomb"><i class="fa fa-search"></i> Search availability</button>
+        </form>
+    </article>
+    <footer>
+        <p>Find Us On</p>
+        <p class="linkek">
+            <a><i class="fa fa-facebook-official"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-snapchat"></i></a>
+            <a><i class="fa fa-pinterest-p"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-linkedin"></i></a>
+        </p>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+</body>
+</html>

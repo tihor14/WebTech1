@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <nav>
+        <a href="#" class="logo"><i class="fa fa-bed"></i> Logo</a>
+        <a href="#rooms">Rooms</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="booknow">Book Now</a>
+    </nav>
+    <article>
+        <img src="kepek/hotel.jpg" alt="The Hotel" width="1500" height="800">
+        <form action="feldolgozo.php" target="_blank">
+            <h1><i class="fa fa-bed"></i> Hotel Name</h1><br>
+            <div>
+                <div>
+                    <label><i class="fa fa-calendar-o"></i> Check In</label><br>
+                    <input type="text" placeholder="DD MM YYYY" id="bevitel1" required><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-calendar-o"></i>  Check Out</label><br>
+                    <input type="text" placeholder="DD MM YYYY" id="bevitel1" required><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-male"></i>  Adults</label><br>
+                    <input type="number" value="1" min="1" max="6" id="bevitel1"><br>
+                </div>
+                <div>
+                    <label><i class="fa fa-child"></i> Kids</label><br>
+                    <input type="number" value="0" min="0" max="6" id="bevitel1"><br>
+                </div>
+            </div>
+            <button type="submit" class="kereso_gomb"><i class="fa fa-search"></i> Search availability</button>
+        </form>
+    </article>
+    <main>
+        <section>
+            <h2 id="rooms">Rooms</h2>
+            <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+            <div>
+                <div>
+                    <div>
+                        <label><i class="fa fa-calendar-o"></i> Check In</label><br>
+                        <input type="text" placeholder="DD MM YYY" class="szelesebb"><br>
+                    </div>
+                    <div>
+                        <label><i class="fa fa-calendar-o"></i> Check Out</label><br>
+                        <input type="text" placeholder="DD MM YYY" class="szelesebb"><br>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <label><i class="fa fa-male"></i> Adults</label><br>
+                        <input type="number" value="1" min="1"><br>
+                    </div>
+                    <div>
+                        <label><i class="fa fa-child"></i> Kids</label><br>
+                        <input type="number" value="0" min="0"><br>
+                    </div>
+                    <div>
+                        <label><i class="fa fa-search"></i> Search</label><br>
+                        <button class="fekete seged">Search</button>
+                    </div>
+                </div>
+            </div>
+            <section id="section2">
+                <article>
+                    <img src="kepek/room_single.jpg" alt="Single Room">
+                    <div>
+                        <h3>Single Room</h3>
+                        <p class="szurke">From $99</p>
+                        <p>Single bed</p>
+                        <p>15m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="kepek/room_double.jpg" alt="Double Room">
+                    <div>
+                        <h3>Double Room</h3>
+                        <p class="szurke">From $149</p>
+                        <p>Queen-size bed</p>
+                        <p>25m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-tv"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="kepek/room_deluxe.jpg" alt="Deluxe Room">
+                    <div>
+                        <h3>Deluxe Room</h3>
+                        <p class="szurke">From $199</p>
+                        <p>King-size bed</p>
+                        <p>40m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-tv"></i>
+                            <i class="fa fa-glass"></i>
+                            <i class="fa fa-cutlery"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section id="section3">
+            <div>
+                <h2 id="about">About</h2>
+                <p>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p>
+                    We accept:
+                    <i class="fa fa-credit-card"></i>
+                    <i class="fa fa-cc-mastercard"></i>
+                    <i class="fa fa-cc-amex"></i>
+                    <i class="fa fa-cc-cc-visa"></i>
+                    <i class="fa fa-cc-paypal"></i>
+                </p>
+            </div>
+            <img src="kepek/map.jpg" alt="Map">
+            <footer>
+                <address>
+                    <p><i class="fa fa-map-marker"></i>423 Some adr, Chicago, US</p><br>
+                    <p><i class="fa fa-phone"></i>Phone: +00 151515</p><br>
+                    <p><i class="fa fa-envelope"></i>Email: mail@mail.com</p><br>
+                </address>
+            </footer>
+        </section>
+        <div id="megjegyzes">
+            <p><i class="fa fa-info"></i> On demand, we can offer playstation, babycall, children care, dog equipment, etc.</p>
+        </div>
+        <section id="section4">
+            <h2>Our Hotels</h2>
+            <p>You can find our hotels anywhere in the world:</p>
+            <div>
+                <div>
+                    <img src="kepek/cinqueterre.jpg" alt="Cinque Terre">
+                    <span>Cinque Terre</span>
+                </div>
+                <div>
+                    <div>
+                        <div>
+                            <img src="kepek/newyork2.jpg" alt="New York">
+                            <span>New York</span>
+                        </div>
+                        <div>
+                            <img src="kepek/sanfran.jpg" alt="San Francisco">
+                            <span>San Francisco</span>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <img src="kepek/pisa.jpg" alt="Pisa">
+                            <span>Pisa</span>
+                        </div>
+                        <div>
+                            <img src="kepek/paris.jpg" alt="Paris">
+                            <span>Paris</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="section5">
+            <h2>Get the best offers first!</h2>
+            <p>Join our newsletter.</p>
+            <form>
+                <label>E-mail</label><br>
+                <input type="text" placeholder="Your Email address"><br>
+                <button>Subscribe</button>
+            </form>
+        </section>
+        <section>
+            <h2 id="contact">Contact</h2>
+            <p>If you have any questions, do not hesitate to ask them.</p>
+            <address>
+                <i class="fa fa-map-marker"></i>Chicago, US<br>
+                <i class="fa fa-phone"></i>Phone: +00 151515<br>
+                <i class="fa fa-envelope"></i>Email: mail@mail.com<br>
+            </address>
+            <form action="feldolgozo.html" target="_blank">
+                <input type="text" placeholder="Name" required><br>
+                <input type="text" placeholder="Email" required><br>
+                <input type="text" placeholder="Message" required><br>
+                <input type="submit" class="fekete" value="SEND MESSAGE"><br>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Find Us On</p>
+        <p class="linkek">
+            <a><i class="fa fa-facebook-official"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-snapchat"></i></a>
+            <a><i class="fa fa-pinterest-p"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-linkedin"></i></a>
+        </p>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+</body>
+</html>

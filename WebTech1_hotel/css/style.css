@@ -1,3 +1,594 @@
-h1 {
-    color : aqua;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, input {
+    font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+body > nav {
+    color: #000;
+    background-color: #fff;
+    font-size: 18px;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+body > nav a {
+    text-decoration: none;
+    width: auto;
+    padding: 8px 16px;
+    color: #000;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.booknow {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 47px;
+    background-color: #f1f1f1;
+}
+
+.logo {
+    background-color: #f44336;
+    color: #fff;
+    padding: 10px 16px;
+    width: 110px;
+}
+
+body > article img {
+    width: 100%;
+    height: auto;
+    min-width: 1000px;
+    position: relative;
+}
+
+body > article {
+    min-width: 1000px;
+}
+
+body > article > form {
+    display: block;
+    background-color: #fff;
+    width: 48%;
+    line-height: 1.5;
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+}
+
+body > article > form > h1 {
+    background-color: #f44336;
+    color: #fff;
+    padding: 16px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+body > article > form > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+body > article > form > div > div {
+    width: 47%;
+    padding: 16px 0 20px;
+}
+
+.bevitel1 {
+    width: 100%;
+    height: 90%;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
+
+.kereso_gomb {
+    font-size: 15px;
+    color: #fff;
+    background-color: #616161;
+    padding: 10px 16px;
+    margin: 10px 16px 20px;
+    border: 0;
+    outline: 0;
+}
+
+body > nav a:hover {
+    background-color: #aaa;
+}
+
+.logo:hover {
+    background-color: #aaa;
+    color: #000;
+}
+
+.booknow:hover {
+    background-color: #aaa;
+}
+
+.kereso_gomb:hover {
+    background-color: #bbb;
+    color: #000;
+    cursor: pointer;
+}
+
+/****************************************************/
+body {
+    background-color: #f1f1f1;
+    overflow-x: hidden;
+}
+
+main > section {
+    margin: 16px;
+}
+
+main > section > h2 {
+    font-weight: normal;
+}
+
+main > section:first-child > h2 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+main > section:first-child {
+    font-size: 15px;
+}
+
+main > section:first-child > p {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+main > section:first-child > div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+main > section:first-child > div > div {
+    display: flex;
+    width: 49.5%;
+    justify-content: space-between;
+}
+
+main > section:first-child > div > div:first-child > div {
+    width: 49%;
+}
+
+main > section:first-child > div > div:last-child > div {
+    width: 32%;
+}
+
+main > section:first-child > div > div > div > input {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+
+.fekete {
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.seged {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+}
+
+.fekete:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
+/*********************************************************/
+#section2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+    #section2 > article {
+        width: 32.5%;
+        background-color: #fff;
+    }
+
+        #section2 > article img {
+            width: 100%;
+        }
+
+        #section2 > article > div {
+            margin: 16px;
+        }
+
+        #section2 > article h3 {
+            font-size: 24px;
+            font-weight: normal;
+            margin-bottom: 16px;
+        }
+
+        #section2 > article button {
+            width: 100%;
+        }
+
+        #section2 > article p {
+            margin-bottom: 16px;
+        }
+
+.szurke {
+    color: #aaa;
+    font-size: 16px;
+}
+
+.gomb {
+    padding: 10px 16px;
+    font-size: 16px;
+}
+/******************************************************/
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+    #section3 > img {
+        width: 66.5%;
+        filter: grayscale(75%);
+    }
+
+    #section3 > div {
+        width: 32.5%;
+        font-size: 16px;
+    }
+
+        #section3 > div > h2, #section3 > div > p {
+            margin-top: 16px;
+            line-height: 1.5;
+        }
+
+        #section3 > div > h2 {
+            font-weight: normal;
+            padding-top: 16px;
+        }
+
+    #section3 > footer {
+        width: 100%;
+    }
+
+        #section3 > footer > address {
+            font-style: normal;
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            width: 100%;
+        }
+
+            #section3 > footer > address > p {
+                width: 33%;
+                text-align: center;
+                padding: 0 8px;
+                font-size: 18px;
+            }
+
+            #section3 > footer > address i {
+                color: #f44336;
+                width: 24px;
+            }
+
+            #section3 > footer > address b {
+                color: #f44336;
+            }
+
+#megjegyzes {
+    border-left: 6px solid #ccc;
+}
+
+    #megjegyzes > p {
+        background-color: #f44336;
+        color: white;
+        padding: 36px 15px;
+    }
+
+        #megjegyzes > p i {
+            background-color: #ff5722;
+            padding: 10px 16px;
+            margin-right: 20px;
+        }
+.hotelReservation{
+    width: 100%;
+}
+/*******************************************************************/
+#section4 {
+    margin-bottom: 70px;
+}
+
+    #section4 > h2 {
+        margin-bottom: 16px;
+        margin-top: 20px;
+    }
+
+    #section4 > p {
+        margin-bottom: 20px;
+    }
+
+    #section4 > div {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+        #section4 > div > div {
+            width: 49.5%;
+            position: relative;
+        }
+
+            #section4 > div > div:last-child {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #section4 > div > div img {
+                z-index: 1;
+                height: 100%;
+                width: 100%;
+            }
+
+            #section4 > div > div span {
+                position: absolute;
+                left: 5px;
+                bottom: 10px;
+                z-index: 10;
+                color: #fff;
+            }
+
+            #section4 > div > div > div {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                height: 49%;
+            }
+
+                #section4 > div > div > div:last-child {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                }
+
+                #section4 > div > div > div > div {
+                    position: relative;
+                    width: 49%;
+                }
+/************************************************/
+#section5 {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    opacity: 0.60;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    padding: 30px 15px 15px;
+}
+
+    #section5 > h2 {
+        font-size: 30px;
+        padding: 20px 0;
+    }
+
+    #section5 > form {
+        padding: 20px 0;
+    }
+
+        #section5 > form > input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            overflow: visible;
+            font-size: 16px;
+            margin-bottom: 16px;
+        }
+
+        #section5 > form > button {
+            background-color: #f44336;
+            color: #fff;
+            border: none;
+            padding: 10px 16px;
+            text-align: center;
+            font-size: 16px;
+        }
+
+            #section5 > form > button:hover {
+                background-color: #ccc;
+                color: #000;
+                cursor: pointer;
+            }
+
+    #section5:hover {
+        opacity: 1;
+    }
+/*******************************/
+main > section:last-child {
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+    main > section:last-child h2 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    main > section:last-child > address {
+        font-style: normal;
+        margin-top: 20px;
+    }
+
+        main > section:last-child > address i {
+            color: #f44336;
+            width: 30px;
+        }
+
+    main > section:last-child input[type="text"], main > section:last-child textarea {
+        width: 100%;
+        border: 1px solid #ccc;
+        padding: 16px;
+        font-size: 16px;
+        margin-top: 16px;
+    }
+
+    main > section:last-child input[type="submit"] {
+        padding: 12px 24px;
+        font-size: 16px;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        cursor: pointer;
+    }
+/************************************************/
+body > footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+    body > footer p:last-child {
+        font-size: 15px;
+    }
+
+    body > footer p {
+        padding-top: 30px;
+    }
+
+    body > footer a {
+        font-style: normal;
+        color: #fff;
+    }
+
+.linkek a {
+    font-size: 25px;
+}
+
+    .linkek a:hover {
+        color: #aaa;
+    }
+
+body > footer p:last-child > a:hover {
+    color: green;
+}
+/*******************************************************************************************************************/
+@media screen and (max-width: 600px) {
+    body > nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+        body > nav a, .logo, .booknow {
+            width: 100%;
+        }
+
+    .booknow {
+        height: auto;
+        position: relative;
+        bottom: 0;
+        left: 0;
+    }
+    /****************/
+    body > article {
+        width: 100%;
+    }
+
+    body > article {
+        position: relative;
+    }
+
+        body > article > form {
+            width: 52%;
+            margin-left: 10px;
+            position: absolute;
+            top: 8%;
+            left: 1%;
+        }
+
+            body > article > form > div {
+                flex-wrap: wrap;
+                width: 100%;
+                padding: 0 15px 0;
+            }
+
+                body > article > form > div > div {
+                    width: 100%;
+                    padding: 10px 0;
+                }
+    /************************/
+    main > section:first-child > div {
+        flex-wrap: wrap;
+    }
+
+        main > section:first-child > div > div {
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+            main > section:first-child > div > div > div {
+                width: 100% !important;
+            }
+    /*************************/
+    #section2 {
+        flex-wrap: wrap;
+    }
+
+        #section2 > article {
+            width: 100%;
+        }
+    /**************************/
+    #section3 > footer > address > p {
+        width: 100%;
+    }
+
+    #section3 > footer > address {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+    /**************************/
+    #section4 > div {
+        flex-wrap: wrap;
+    }
+
+        #section4 > div > div {
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 15px;
+        }
+
+            #section4 > div > div > div {
+                flex-wrap: wrap;
+            }
+
+                #section4 > div > div > div > div {
+                    width: 100%;
+                    position: relative;
+                    margin-bottom: 15px;
+                }
+
+                #section4 > div > div > div:last-child {
+                    position: relative;
+                }
+}
+
+@media screen and (max-width: 1000px) {
+    #section3 > img, #section3 > div {
+        width: 100%;
+    }
 }

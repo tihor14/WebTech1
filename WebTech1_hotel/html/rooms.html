@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            color: #333;
+            font-weight: bold;
+            padding: 10px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+
+        tr:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="home.html" class="logo"><i class="fa fa-bed"></i> Logo</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="about.html">About</a>
+        <a href="ourHotels.html">Our Hotels</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html" class="booknow">Book Now</a>
+    </nav>
+    <main>
+        <section>
+            <h2 id="rooms">Rooms</h2>
+            <p>Make yourself at home is our slogan. We offer the best beds in the industry. Sleep well and rest well.</p>
+            <div>
+                <div>
+                    <div class="roomsInput1">
+                        <label><i class="fa fa-calendar-o"></i> Check In</label><br>
+                        <input type="date" class="szelesebb"><br>
+                    </div>
+                    <div class="roomsInput1">
+                        <label><i class="fa fa-calendar-o"></i> Check Out</label><br>
+                        <input type="date" class="szelesebb"><br>
+                    </div>
+                </div>
+                <div>
+                    <div class="roomsInpu2t">
+                        <label><i class="fa fa-male"></i> Adults</label><br>
+                        <input type="number" value="1" min="1"><br>
+                    </div>
+                    <div class="roomsInput2">
+                        <label><i class="fa fa-child"></i> Kids</label><br>
+                        <input type="number" value="0" min="0"><br>
+                    </div>
+                    <div class="roomsInput2">
+                        <label><i class="fa fa-search"></i> Search</label><br>
+                        <button class="fekete seged">Search</button>
+                    </div>
+                </div>
+            </div>
+            <section id="section2">
+                <article>
+                    <img src="../kepek/room_single.jpg" alt="Single Room">
+                    <div>
+                        <h3>Single Room</h3>
+                        <p class="szurke">From $99</p>
+                        <p>Single bed</p>
+                        <p>15m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="../kepek/room_double.jpg" alt="Double Room">
+                    <div>
+                        <h3>Double Room</h3>
+                        <p class="szurke">From $149</p>
+                        <p>Queen-size bed</p>
+                        <p>25m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-tv"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+                <article>
+                    <img src="../kepek/room_deluxe.jpg" alt="Deluxe Room">
+                    <div>
+                        <h3>Deluxe Room</h3>
+                        <p class="szurke">From $199</p>
+                        <p>King-size bed</p>
+                        <p>40m<sup>2</sup></p>
+                        <p>
+                            <i class="fa fa-bath"></i>
+                            <i class="fa fa-phone"></i>
+                            <i class="fa fa-wifi"></i>
+                            <i class="fa fa-tv"></i>
+                            <i class="fa fa-glass"></i>
+                            <i class="fa fa-cutlery"></i>
+                        </p>
+                        <button class="fekete gomb">Choose Room</button>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section>
+            <h2>Hotels</h2>
+            <table border="1" style="width:100%">
+                <tr>
+                    <th>Hotel Name</th>
+                    <th>Stars</th>
+                    <th>Price</th>
+                    <th>Services</th>
+                </tr>
+                <tr>
+                    <td>Hotel A</td>
+                    <td>★★★★★</td>
+                    <td>$300</td>
+                    <td>Wellness: <strong>X</strong></td>
+                </tr>
+                <tr>
+                    <td>Hotel B</td>
+                    <td>★★★★</td>
+                    <td>$200</td>
+                    <td>Wellness: <strong>X</strong></td>
+                </tr>
+                <tr>
+                    <td>Hotel C</td>
+                    <td>★★★</td>
+                    <td>$150</td>
+                    <td>Wellness: </td>
+                </tr>
+                <tr>
+                    <td>Hotel D</td>
+                    <td>★★</td>
+                    <td>$100</td>
+                    <td>Wellness: </td>
+                </tr>
+                <tr>
+                    <td>Hotel E</td>
+                    <td>★</td>
+                    <td>$50</td>
+                    <td>Wellness: </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>Find Us On</p>
+        <p class="linkek">
+            <a><i class="fa fa-facebook-official"></i></a>
+            <a><i class="fa fa-instagram"></i></a>
+            <a><i class="fa fa-snapchat"></i></a>
+            <a><i class="fa fa-pinterest-p"></i></a>
+            <a><i class="fa fa-twitter"></i></a>
+            <a><i class="fa fa-linkedin"></i></a>
+        </p>
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
+</body>
+</html>
