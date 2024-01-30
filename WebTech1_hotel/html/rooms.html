@@ -34,6 +34,35 @@
             background-color: #e0e0e0;
         }
     </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // eseménykezelő minden "Choose Room" gombhoz
+            var chooseRoomButtons = document.querySelectorAll('.gomb');
+            chooseRoomButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    //  szoba adatainak lekérése
+                    var roomContainer = this.closest('article');
+                    var roomName = roomContainer.querySelector('h3').innerText;
+                    var roomPrice = roomContainer.querySelector('.szurke').innerText.replace(/\D/g, ''); // Csak a számok kiválasztása
+
+                    // új sor hozzáadása
+                    var table = document.querySelector('table');
+                    var newRow = table.insertRow(-1);
+                    var cell1 = newRow.insertCell(0);
+                    var cell2 = newRow.insertCell(1);
+                    var cell3 = newRow.insertCell(2);
+                    var cell4 = newRow.insertCell(3);
+
+                    cell1.innerText = roomName;
+                    cell2.innerText = '★★★★★';
+                    cell3.innerText = '$' + roomPrice;
+                    cell4.innerHTML = 'Wellness: <strong>X</strong>';
+
+                    button.disabled = true;
+                });
+            });
+        });
+    </script>
 </head>
 <body>
     <nav>
@@ -127,40 +156,40 @@
             </section>
         </section>
         <section>
-            <h2>Hotels</h2>
+            <h2>Rooms</h2>
             <table border="1" style="width:100%">
                 <tr>
-                    <th>Hotel Name</th>
+                    <th>Room Name</th>
                     <th>Stars</th>
                     <th>Price</th>
                     <th>Services</th>
                 </tr>
                 <tr>
-                    <td>Hotel A</td>
+                    <td>Room A</td>
                     <td>★★★★★</td>
                     <td>$300</td>
                     <td>Wellness: <strong>X</strong></td>
                 </tr>
                 <tr>
-                    <td>Hotel B</td>
+                    <td>Room B</td>
                     <td>★★★★</td>
                     <td>$200</td>
                     <td>Wellness: <strong>X</strong></td>
                 </tr>
                 <tr>
-                    <td>Hotel C</td>
+                    <td>Room C</td>
                     <td>★★★</td>
                     <td>$150</td>
                     <td>Wellness: </td>
                 </tr>
                 <tr>
-                    <td>Hotel D</td>
+                    <td>Room D</td>
                     <td>★★</td>
                     <td>$100</td>
                     <td>Wellness: </td>
                 </tr>
                 <tr>
-                    <td>Hotel E</td>
+                    <td>Room E</td>
                     <td>★</td>
                     <td>$50</td>
                     <td>Wellness: </td>

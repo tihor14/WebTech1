@@ -6,6 +6,34 @@
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        #success-message {
+            position: fixed;
+            left: -100%; /* Kezdeti pozíció a képernyő bal szélén kívül */
+            top: 50%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px;
+            transition: left 1s ease-in-out;
+        }
+    </style>
+    <script>
+        function validateEmail() {
+            var emailInput = document.getElementById("email");
+            var email = emailInput.value;
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            var successMessage = document.getElementById("success-message");
+
+            if (emailRegex.test(email)) {
+                successMessage.style.left = "50%"; // Beugrik a képernyő közepére
+                setTimeout(function () {
+                    successMessage.style.left = "-100%"; // Kicsúszik
+                }, 3000); // 3 másodperc után
+            } else {
+                alert("Invalid email format! Please enter a valid email address.");
+            }
+        }
+    </script>
 </head>
 <body>
     <nav>
@@ -56,9 +84,10 @@
                 <p>Join our newsletter.</p>
                 <form>
                     <label>E-mail</label><br>
-                    <input type="text" placeholder="Your Email address"><br>
-                    <button>Subscribe</button>
+                    <input type="text" id="email" placeholder="Your Email address"><br>
+                    <button type="button" onclick="validateEmail()">Subscribe</button>
                 </form>
+                <div id="success-message">Subscription successful!</div>
             </section>
             <section></section>
         </section>
